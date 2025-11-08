@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Clément ALBERGE</title>
+    <title>Clément ALBERGE - HomePage</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -99,6 +99,40 @@
             color: #212529;
             text-align: center;
         }
+        .img-overlay {
+            position: relative;
+            display: inline-block;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .img-overlay img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform .25s ease;
+        }
+        .img-overlay:hover img {
+            transform: scale(1.02);
+        }
+        .img-overlay .overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8px;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity .2s ease;
+            pointer-events: none;
+        }
+        .img-overlay:hover .overlay {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -111,32 +145,234 @@
     
     </header>
     <div class="contact-info">
-        <lu>28 years old - Driving License - Gentilly 94250 </lu>
+        
+            <p style="text-align: justify">
+                Experienced engineer and project manager with a strong focus on <strong>Virtual Reality (VR)</strong>, robotics, and <strong>interactive technologies</strong>. 
+                Over three years of experience leading projects that bridge cutting-edge research and practical applications, including medical visualization, haptic systems, and <strong>educational VR platforms</strong>. 
+                Skilled in developing tailored solutions, managing multidisciplinary teams, and collaborating with stakeholders to address complex challenges in immersive and interactive systems.
+            </p>
+    
+        <!--<lu>28 years old - Driving License - Gentilly 94250 </lu>-->
         <lu><p >
             
-            <strong>Email:</strong> <a href="mailto:clement.albriz@gmail.com">clement.albriz@gmail.com</a> | 
-            <strong><a href="https://www.linkedin.com/in/cl%C3%A9ment-alberge-181bab143" target="_blank">LinkedIn</a></strong> 
+            <strong><a href="mailto:clement.albriz@gmail.com">Email</a> </strong>
+            | <strong><a href="CV_ALBERGE_2024.pdf" target="_self">CV</a></strong> 
+            | <strong><a href="https://www.linkedin.com/in/cl%C3%A9ment-alberge-181bab143" target="_blank">LinkedIn</a></strong> 
+            <!--| <strong><a href="https://github.com/AlbClement">GitHub</a></strong>-->
+            
         </p></lu>
+    
         
     </div>
 
     <div class="container">
 
-    
         <div class="section">
-            <h3>Profile Summary</h3>
-            <p>
-                Experienced engineer and project manager with a strong focus on <strong>Virtual Reality (VR)</strong>, robotics, and <strong>interactive technologies</strong>. 
-                Over three years of experience leading projects that bridge cutting-edge research and practical applications, including medical visualization, haptic systems, and <strong>educational VR platforms</strong>. 
-                Skilled in developing tailored solutions, managing multidisciplinary teams, and collaborating with stakeholders to address complex challenges in immersive and interactive systems.
-            </p>
-        </div>
+            <h3>Key Projects</h3>
+            
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <center>(2023 - Present)</center>
+                        <br>
+                        <div style="text-align: center"><a target="_self" rel="noopener noreferrer" href="projectPage/CoVRDemos.html">
+                            <div class="img-overlay">
+                                <img src="images/viewCoVR.PNG" alt="CoVR"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                                <div class="overlay">CoVR — View details</div>
+                            </div>
+                        </a></div>
+                    </td>
+            
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a target="_self" rel="noopener noreferrer" href="CoVRDemos.html">
+                            <h4> CoVR project</h4>
+                        </a>
+                        <br>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/gbailly/">Giles Bailly</a>,
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/haliyo/">Sinan Haliyo</a>,
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/gauthier/">Philippe Gauthier</a>
+                        
+                        
+                        
+                        <p> CoVR project aims to develop a robotic platform for virtual reality, exploring immersion in a virtual space while moving in real time. This platform is at the crossroads of robotics and human-machine interaction. 
+                        </p>
+                        <p> Project Manager and Developer in charge of managing and develop tools for this platform with the guidance of Gilles Bailly and Sinan Haliyo. 
+                        </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/projets/covr-plateforme-haptique-pour-la-realite-virtuelle/">Isir Project Page</a> /
+                        <a target="_blank" rel="noopener noreferrer" href=" https://hal.science/hal-02931830">Paper</a> /
+                        <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/4RMuj76XSEo">Video</a> 
 
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+            <hr />
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <center>2024</center>
+                            <br>
+                            <div style="text-align: center"><a target="_self" rel="noopener noreferrer" href="">
+                                <img src="images/peroscope.PNG" alt="sym"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                            </a></div>
+                        </td>
+                
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a target="_blank" rel="noopener noreferrer" href="">
+                                <h4> Peroscope</h4>
+                            </a>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/avellino/">Ignacio AVELLINO</a>,
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/haddad/">Alexandre HADDAD</a>
+                            
+                            
+                            
+                            <p>Peroscope (for intra-operative endoscopy ) is a web interface build on top of the experimental research platform  Webstrates and Videostrates to provide a realtime collaborating video editing environment for surgeons. It's provide a additive method by defining and modifying sequence with temporal Tag boxes in a full timeline that appear then in a summary timeline that order and join those sequences.</p>
+                            <p>Main developer to rebuild the interface in order to make it usable into operative context. Adding all the features needed for the study of Alexandre with the supervision of Ignacio AVELLINO. </p>
+                            
+                            <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04500046v2">Paper</a> / 
+                            <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04487266v2">Paper</a> 
+    
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <center> 2021 – 2023</center>
+                            <br>
+                            <div style="text-align: center"><a target="_blank" rel="noopener noreferrer" href="notFound">
+                                <img src="" alt="sym"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                            </a></div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a target="_blank" rel="noopener noreferrer" href="page">
+                                <h4> FOG VR</h4>
+                            </a>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" href="https://institutducerveau.org/collaborateurs/welter-marie-laure">Marie-Laure WELTER</a>,
+                            <a target="_blank" rel="noopener noreferrer" href="https://institutducerveau.org/collaborateurs/karachi-carine">Carine KARACHI</a>,
+                            <a target="_blank" rel="noopener noreferrer" href="https://institutducerveau.org/collaborateurs/karachi-carine">Jerome MUNUERA</a>,
+                            <a>Edward SOUNDARAVELOU</a>
+                            
+                            
+                            
+                            <p>FOG VR is a project initiate by the Team <a href="https://institutducerveau.org/equipes-recherche-linstitut-cerveau/neurxp-neurochirurgie-experimentale">neurxp</a> of Brain Institute (Pitie Salpetriere Hospital campus) around the study of Freezing Of Gait Phenomenon  </p>
+                            <p>Create and integrate to a gait analysis experimental platform a VR overlay with customs vr project for two Parkinson protocol studies. Made to works without interfering with the sensors and devices used in the platform and provide data synchronize in post with mocap and sensor data.  </p>
+                            
+                            
+    
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <hr />
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <tbody>
+                        <tr>
+                            <td style="padding:20px;width:25%;vertical-align:middle">
+                                <center>2023</center>
+                                <br>
+                                <div style="text-align: center"><a target="_blank" rel="noopener noreferrer" href="notFound">
+                                    <img src="" alt="sym"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                                </a></div>
+                            </td>
+                            <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a target="_blank" rel="noopener noreferrer" href="page">
+                                    <h4>Revap2</h4>
+                                </a>
+                                <br>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/avellino/">Ignacio AVELLINO</a>,
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/gauthier/">Philippe Gauthier</a>
+                                
+                                
+                                <p>REVAP (for Realite Virtuelle et APprentissage), a virtual reality environment where students can visualize 3D videos of surgery under immersion, using a Head-Mounted Display (HMD)</p>
+                                <p>Redesign of a VR teaching interface. Add ergonomic and data collection functionalities.</p>
+                                
+                                <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04500046v2">Paper</a> 
+        
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <hr />
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <center>dates</center>
+                                    <br>
+                                    <div style="text-align: center"><a target="_self" rel="noopener noreferrer" href="">
+                                        <img src="images/CPRE.PNG" alt="sym"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                                    </a></div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a target="_blank" rel="noopener noreferrer" href="page">
+                                        <h4> CPRE </h4>
+                                    </a>
+                                    <br>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/sz/">Jérome Szewczyk</a>,
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/becq/">Aymeric Becq</a>
+                                    
+                                    
+                                    
+                                    <p>Project for an automatic guidewire detection solution on fluoroscopic Endoscopic Retrograde Cholangio-Pancreatography (ERCP) images. The aim is to implement automatic guidewire localization in the biliary tract and help reduce the failure rate of this delicate procedure. </p>
+                                    <p>Creation of a 3DSlicer module including a 2D/3D fusion algorithm in Python for a diagnostic aid study. This calculates the probability of the guidewire's presence in each bile duct using the 3D model of the patient projected on the fluoroscopy.</p>
+                                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04685526v1">Paper</a> 
+            
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            <!--<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <center>dates</center>
+                            <br>
+                            <div style="text-align: center"><a target="_blank" rel="noopener noreferrer" href="imageProject">
+                                <img src="" alt="sym"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                            </a></div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a target="_blank" rel="noopener noreferrer" href="page">
+                                <h4> Project name</h4>
+                            </a>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" href="link">collaborator</a>
+                            
+                            
+                            
+                            <p>abstract</p>
+                            <p>contribution</p>
+                            
+                            <a target="_blank" rel="noopener noreferrer" href="ref">ref</a> / 
+    
+                        </td>
+                    </tr>
+                </tbody>
+                </table>-->
+        </div>
+        
+    </div>
+    
+    <div class="container">
         <div class="section">
             <h3>Professional Experience</h3>
             <ul>
                 <li>
-                    <strong>2023 – Present: Research Engineer (CNRS)</strong> – ISIR, Paris
+                    <strong>2023 – Present: Research Engineer (CNRS)</strong> – <a href="https://www.isir.upmc.fr/equipes/acide/">ISIR's ACIDE TEAM</a> , Paris
                     <ul>
                         <li>Lead developer and manager for the COVR visio-haptic robotic platform.</li>
                         <li>Supervised PhD candidates, master’s students, and interns in their development.</li>
@@ -144,7 +380,7 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>2021 – 2023: VR Engineer & Project Manager</strong> – SUMMIT, Paris
+                    <strong>2021 – 2023: VR Engineer & Project Manager</strong> – <a href="https://summit.sorbonne-universite.fr/">SUMMIT</a>, Paris
                     <ul>
                         <li>Managed multidisciplinary VR projects ensuring delivery within scope, budget, and deadlines.</li>
                         <li>Developed the Revap2 educational VR surgery platform.</li>
@@ -174,20 +410,7 @@
                 <li><strong>2018:</strong> Erasmus Program – Industrial Systems Engineering – NTNU, Norway</li>
             </ul>
         </div>
-
-        <div class="section">
-            <h3>Key Projects</h3>
-            <ul>
-                <li><strong>Péroscope (2024):</strong> Developed a surgical video editing platform.</li>
-                <li><strong>FOG VR (2021–2023):</strong> Enhanced VR layers for Parkinson’s research protocols.</li>
-                <li><strong>Revap2 (2023):</strong> Revise a VR training application for surgeries.</li>
-                <li><strong>CPRE (2021–2022):</strong> Design and development of an interface to enhance fluoroscopy imaging by integrating preoperative 3D MRI data, improving visualization.</li>
-            </ul>
-        </div>
-
-        
     </div>
-    
     <div class="container">
         <div class="section">
             <h3>Technology</h3>
