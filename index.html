@@ -11,11 +11,20 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            padding-bottom: 40px;
             color: #212529;
             background-color: #f4f4f9;
         }
-
         header {
+            position: fixed;
+            background: #21252900;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            bottom: 0;
+            z-index: 1000;
+        }
+        .Top {
             background: #a3611f;
             color: #fff;
             padding: 20px 0;
@@ -23,12 +32,12 @@
             position: relative;
         }
 
-        header h1 {
+        .Top h1 {
             margin: 0;
             font-size: 2.5em;
         }
 
-        header h2 {
+        .Top h2 {
             margin: 0;
             font-size: 1.2em;
             font-weight: normal;
@@ -71,8 +80,11 @@
             margin-bottom: 10px;
             margin-left: 40px;
         }
-
-        .skills span {
+        .block {
+            
+            margin: 0 auto;
+        }
+        .block span {
             display:inline-block;
             background: #e4e4e4;
             color: #212529;
@@ -83,10 +95,16 @@
         }
 
         footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #212529;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 10px auto;
             color: #fff;
+            
+            z-index: 1000;
+            box-sizing: border-box;
         }
         .contact-info {
             
@@ -136,14 +154,15 @@
     </style>
 </head>
 <body>
-    <header>
+    
+    <div class="Top">
         <img src="clementalbergephoto.jpg" alt="Profile Picture" class="profile-pic">
         
-        <h1>Clément ALBERGE</h1>
+        <h1 id="TopPage">Clément ALBERGE</h1>
         <h2>Virtual Reality Engineer & Project Manager</h2>
 
     
-    </header>
+    </div>
     <div class="contact-info">
         
             <p style="text-align: justify">
@@ -165,11 +184,10 @@
     
         
     </div>
-
-    <div class="container">
+    <div class="container" id="KeyProjects">
 
         <div class="section">
-            <h3>Key Projects</h3>
+            <h3 >Key Projects</h3>
             
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -382,9 +400,9 @@
         
     </div>
     
-    <div class="container">
+    <div class="container" id="Experience">
         <div class="section">
-            <h3>Professional Experience</h3>
+            <h3 >Professional Experience</h3>
             <ul>
                 <li>
                     <strong>2023 – Present: Research Engineer (CNRS)</strong> – <a href="https://www.isir.upmc.fr/equipes/acide/">ISIR's ACIDE TEAM</a> , Paris
@@ -418,7 +436,7 @@
         </div>
 
         <div class="section">
-            <h3>Education</h3>
+            <h3 id="Education">Education</h3>
             <ul>
                 <li><strong>2021:</strong> Master’s in Sciences for Engineering (Mecanics, Robotics, Simulation & VR) – Sorbonne Université</li>
                 <li><strong>2018:</strong> Bachelor’s in Mechanics – Sorbonne Université</li>
@@ -426,30 +444,46 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-        <div class="section">
+    <div class="container" id="Skills">
+        <div  class="section">
             <h3>Technology</h3>
-            <div class="skills">
+            <div class="block">
                 <span>VR</span> | <span>Motion capture</span> | <span>Robotic systems integration</span> | <span>3D modeling tools</span> | <span>Data Acquisition, processing, & integration</span>  | <span>UI/UX</span>
             </div>
             <h3>Development</h3>
-            <div class="skills">
+            <div class="block">
                 <span>C#</span> | <span>Python</span> | <span>MATLAB</span> | <span>C++</span> | <span>Unity</span> | <span>JavaScript</span> | <span>Git</span>
             </div>
             <h3>Project Management</h3>
-            <div class="skills">
+            <div class="block">
                 <span>Systems architecture</span> | <span>Technical Decomposition</span> | <span>Communication & Relationship Management</span> | <span>Risk Assessment & Mitigation</span>
             </div>
         </div>
 
         <div class="section">
             <h3>Languages</h3>
-            <div class="skills">
+            <div class="block">
                 <span><strong>French:</strong> Native</span> | <span><strong>English:</strong> Fluent (B2)</span>
             </div>
         </div>
 
     </div>
+
+    <footer>
+    <div class="block" style="text-align: left; margin: auto 10px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <span><a href="#KeyProjects">Projects</a></span> 
+                <span><a href="#Experience">Experiences</a></span> 
+                <span><a href="#Skills">Skills</a></span>
+            </div>
+            <div>
+                <span><a href="#Top">TopPage</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
 
