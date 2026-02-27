@@ -50,6 +50,21 @@
             object-fit: cover;
             border-radius: 20%;
         }
+        .containerPicture {
+            display: flex;
+            justify-content: space-between; /* left, center, right */
+            align-items: center;
+            padding: 20px 100px;
+            
+        }
+
+        .context-pic {
+            position: relative;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10%;
+        }
+        
 
 
         .container {
@@ -156,10 +171,18 @@
 <body>
     
     <div class="Top">
-        <img src="images/clementalbergephoto.jpg" alt="Profile Picture" class="profile-pic">
         
-        <h1 id="TopPage">Clément ALBERGE</h1>
-        <h2>Virtual Reality Engineer & Project Manager</h2>
+        <div class="containerPicture">
+            <img src="images/clementCognitive.PNG" alt="context Demo" class="context-pic">
+            <div>
+            <img src="images/clementalbergephoto.jpg" alt="Profile Picture" class="profile-pic">
+            <h1 id="TopPage">Clément ALBERGE</h1>
+            <h2>Virtual Reality Engineer & Project Manager</h2>
+            </div>
+            <img src="images/plateformCoVRDemo.JPG" alt="context Plateform"  class="context-pic">
+        </div>
+        
+        
 
     
     </div>
@@ -189,6 +212,47 @@
         <div class="section">
             <h3 >Key Projects</h3>
             
+            
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <!--<center>2023 - 2025</center>-->
+                        <br>
+                        <div style="text-align: center"><a target="_blank" rel="noopener noreferrer" href="https://journee-rt-cognition.eventmaker.io/fr/demonstrations/toucher-le-monde-virtuel-illusion-ou-realite">
+                            <div class="img-overlay">
+                                <img src="images/clementDemoSalonR&TCognition28_01_25.jpeg" alt="Mini CoVR"  style="border-radius:5px; max-width: 100%; height: auto; object-fit: contain;">
+                                <div class="overlay">Mini CoVR — R&T Carnot</div>
+                            </div>
+                        </a></div>
+                    </td>
+            
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a>
+                            <h4> Mini CoVR, ISIR CNRS, 2025 </h4>
+                        </a>
+                        <br>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/gbailly/">Giles Bailly</a>,
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/baudry/">Aline Baudry</a>,
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/personnel/hadjes/">Samuel Hadjes</a>
+                        
+                        
+                        
+                        <p> The Mini CoVR demonstration was prepared for the R&T Cognition day organised by the Carnot Cognition Institute on 28 January 2025. It shows the possibilities of physical interaction in virtual reality using several hand redirection techniques. 
+                        </p>
+                        <p> Project Manager and Developer in charge of Unity and VR par, collaborate with Aline baudry and Samuel Hadjes of the isir ingeniering unit for hardware and robotic programmation and ROS. 
+                        </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://journee-rt-cognition.eventmaker.io/fr/demonstrations/toucher-le-monde-virtuel-illusion-ou-realite">R&T Carnot Cognition 2025 </a> /
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.isir.upmc.fr/actualites/decouvrez-lunivers-de-la-robotique-a-lisir-lors-de-la-fete-de-la-science-2025/">Seen in Fête de la science 2025</a> /
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=wwsvLxHTt0w">Video</a> 
+
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            <hr />
+
+
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
                 <tr>
@@ -254,7 +318,7 @@
                             
                             
                             <p>Peroscope (for intra-operative endoscopy ) is a web interface build on top of the experimental research platform  Webstrates and Videostrates to provide a realtime collaborating video editing environment for surgeons. It's provide a additive method by defining and modifying sequence with temporal Tag boxes in a full timeline that appear then in a summary timeline that order and join those sequences.</p>
-                            <p>Main developer to rebuild the interface in order to make it usable into operative context. Adding all the features needed for the study of Alexandre with the supervision of Ignacio AVELLINO. </p>
+                            <p>Main developer to rebuild the interface in order to make it usable into operative context. Adding all the features needed for the study of Alexandre HADDAD with the supervision of Ignacio AVELLINO. </p>
                             
                             <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04500046v2">Paper</a> / 
                             <a target="_blank" rel="noopener noreferrer" href="https://hal.science/hal-04487266v2">Paper</a> 
